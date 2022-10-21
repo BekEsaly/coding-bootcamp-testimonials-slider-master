@@ -21,7 +21,7 @@ body{
 }
 
 .container{
-    padding: 0 1rem;
+    padding: 0 1rem 0;
 }
 .nav-btn{
    z-index: 100;
