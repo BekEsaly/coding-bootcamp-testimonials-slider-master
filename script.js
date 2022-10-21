@@ -30,7 +30,7 @@ const slider=()=>{
             <p class="info">${content[i].info}</p>
             <div>
               <strong>${content[i].name}</strong>
-              <p>${content[i].speciality}
+              <p> ${content[i].speciality}
               </p>
             </div>
         </div>
