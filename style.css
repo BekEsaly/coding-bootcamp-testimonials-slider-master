@@ -22,10 +22,6 @@ body{
 
 .container{
     padding: 0 1rem;
-     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 .nav-btn{
    z-index: 100;
@@ -105,7 +101,7 @@ body{
     text-align: center;
 }
   .nav-btn{
-     top: 48%;
+     top: 33%;
   }
  .pattern-curve{
    width: 80%;
