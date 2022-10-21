@@ -1,0 +1,116 @@
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+ 
+:root{
+    --darkBlue: hsl(240, 38%, 20%);
+--grayishBlue: hsl(240, 18%, 77%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    padding: 0 1rem 0;
+}
+.nav-btn{
+   z-index: 100;
+   box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.5);
+   background: white;
+   border-radius:2rem;
+   padding: 0.8rem 1rem;
+   position: absolute;
+   top: 68%;
+   right: 43%;
+}
+.next{
+  margin-left: 1.5rem;
+}
+.card{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color:var(--darkBlue);
+    font-weight: 300;
+}
+.card-content{
+    z-index: 100;
+    margin-right: -10rem;
+}
+.card-content div{
+    display: flex;
+    gap:0.5rem;
+     justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    color: var(--grayishBlue);
+    font-size: 1.125rem;
+}
+ 
+.card-content div strong{
+    color: var(--darkBlue);
+}
+.info{
+    margin-top: 3rem;
+}
+.card-img{
+    max-width: 43rem;
+    height:43rem;
+}
+.pattern-curve{
+    position: absolute;
+    left: 0;
+    top: 65%;
+}
+.quotes{
+    max-width: 6rem;
+     position: absolute;
+}
+@media (min-width:260px) and (max-width:800px) {
+   .container{
+       height: 100%;
+   }
+   .card{
+        flex-direction: column;
+        gap: 2rem;
+        font-size: 1.125rem;
+    }
+    
+  .card-img{
+  width: 85%;
+  height: 85%;
+    }
+  .card-content{
+   margin-right: 0;
+    text-align: center;
+}
+  .card-content div{
+    flex-direction: column;
+    font-size: 1.125rem;
+    text-align: center;
+}
+  .nav-btn{
+     top: 33%;
+  }
+ .pattern-curve{
+   width: 80%;
+   left: 0;
+   bottom: 0;
+ }
+ .quotes{
+    width: 4rem;
+    left: 38%;
+ }
+}
